@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 const API_KEY = process.env.TMDB_API_KEY;
 
-const CLIENT_DIR = path.join(__dirname, "../client");
+const CLIENT_DIR = __dirname;
 
 app.use(cors());
 app.use(express.json());
